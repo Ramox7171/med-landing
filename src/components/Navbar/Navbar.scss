@@ -1,0 +1,118 @@
+@use "../../shared/colors" as colors;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 30;
+  width: 100%;
+  padding: 1rem 0;
+  color:black;
+  border-bottom: 2px solid colors.$medic-blue;
+  transition: background-color 0.3s ease-in-out;
+ 
+
+
+  &--top {
+    background-color: white;
+  }
+
+  &--scrolled {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 85%;
+    
+
+    
+  }
+
+  &__logo {
+    
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    height: 80px;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.875rem; 
+    align-items: center;
+    
+
+    &-item {
+      text-decoration: none;
+      color: black;
+      transition: color 0.3s;
+
+      &:hover {
+        color: colors.$medic-blue;
+      }
+
+      &--active {
+        color: colors.$medic-blue;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__menu-btn {
+    border-radius: 50%;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      color: colors.$medic-blue;
+    }
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  height: 100%;
+  width: 100%;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+  &__img {
+    width: 200px;
+  }
+  
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 2rem;
+    color: black;
+  }
+}
