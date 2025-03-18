@@ -31,29 +31,32 @@ const Home = ({ setSelectedPage }: Props) => {
                     visible: { opacity: 1, x: 0 },
                 }}
             >
-               <div className="home__content">
-                <h2 className="home__welcome--big"
-                >{strings.welcomeBig}</h2>
-                <h2 className="home__welcome--color">
-                    {strings.welcomeBigColor}</h2>
-                <div className="home__cta">
-                <button className="home__button">{strings.homeButton}</button>
-                <button className="home__button--transparent">{strings.homeCTA}</button>
-                
+                <div className="home__content">
+                    <h2 className="home__welcome--big"
+                    >{strings.welcomeBig}</h2>
+                    <h2 className="home__welcome--color">
+                        {strings.welcomeBigColor}</h2>
+                    <div className="home__cta">
+                        <button className="home__button">{strings.homeButton}</button>
+                        <button className="home__button--transparent">{strings.homeCTA}</button>
+
+
+                    </div>
+                    <div className="home__info-wrapper">
+                        <div className="home__info-box">
+
+                            <h2 className="home__info-text">{strings.homeInfoBlue}</h2>
+                            <h2 className="home__info-text--red">{strings.homeInfoRed}</h2>
+                        </div>
+                    </div>
+
 
                 </div>
-                <div className="home__info-box">
-
-                <h2 className="home__info-text">{strings.homeInfoBlue}</h2>
-                <h2 className="home__info-text--red">{strings.homeInfoRed}</h2>
-                </div>
-                
-
-               </div>
-               <div className="home__image">
+                {isAboveMediumScreens && 
+                <div className="home__image">
                 <img src={doctor} alt="doctor image rounded" />
-               </div>
-
+            </div>
+}
 
             </motion.div>
 

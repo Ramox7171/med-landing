@@ -14,8 +14,8 @@ const ActionButton = ({ children, setSelectedPage, classes = "", href }: Props) 
   return (
     <AnchorLink
       className={`action-button ${classes ? "action-button--custom " + classes : ""}`.trim()}
-      onClick={() => setSelectedPage(SelectedPage.ContactUs)}
-      href={href || `#${SelectedPage.ContactUs}`}
+      onClick={() => setSelectedPage(SelectedPage.Contact)}
+      href={href || `#${SelectedPage.Contact}`}
     >
       {children}
     </AnchorLink>

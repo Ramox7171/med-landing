@@ -1,12 +1,14 @@
 
 export enum SelectedPage {
     Home = "home",
-    OurMission= "ourmission",
-    WhyUs = "whyus",
-    OurValue = "ourvalue",
-    Services = "services",
-    Testimonials = "testimonials",
-    ContactUs = "contact",
+    AboutUs= "aboutus",
+    Medical = "medicalservices",
+    Before = "beforevisit",
+    Pricing = "pricing",
+    Getting = "gettinghere",
+    Contact = "contact",
 
     
   }
+
+ 
