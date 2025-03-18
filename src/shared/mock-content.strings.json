@@ -1,4 +1,9 @@
 {
     "heroButtonEN": "make an appointment",
-    "heroButtonPL": "umów wizytę"
+    "welcomeBig": "Discover a clinic where your family’s health comes first",
+    "welcomeBigColor":"– trust, care, and expertise.",
+    "homeButton": "Why choose us?",
+    "homeCTA": "Make an appointment",
+    "homeInfoRed":"Appointments at the clinic are available only by phone or SMS arrangement for a scheduled time.",
+    "homeInfoBlue": "Before making an appointment, please make sure to read the information in the 'Before Visit' section."
 }

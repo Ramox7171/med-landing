@@ -1,0 +1,130 @@
+@use "../../shared/colors" as colors;
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    
+    
+
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        
+        margin: 2rem 2rem;
+        width: 100%;
+        height: 100%;
+        
+        
+    }
+
+    &__content {
+        
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        justify-content: center;
+        
+        max-width: 50%;
+    }
+    &__welcome--big {
+        margin-top: 2.5rem;
+        margin-bottom: 0;
+        padding-top: 4rem;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    &__welcome--color {
+        margin:0 ;
+        font-size: 3rem;
+        font-weight: bold;
+        
+        color: colors.$medic-blue;
+    }
+
+    &__info-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__info-text {
+        font-family: Alkatra,sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        color:colors.$medic-blue;
+        max-width: 60%;
+
+        &--red{
+        font-family: Alkatra,sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        max-width: 60%;
+        color: colors.$important-red;
+        
+        }
+    }
+
+    &__image {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        align-items:end;
+        img {
+            width: 600px;
+            
+
+        }
+
+    }
+
+    &__cta {
+        display: flex;
+        justify-content: center;
+        margin: 4rem 0;
+        gap: 2rem;
+
+    }
+    &__button {
+        
+        border-radius: 0.375rem; 
+        padding: 0.5rem 2rem; 
+        background-color: colors.$medic-blue;
+        color: white;
+        font-family: Alkatra,sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        outline: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+      
+        &:hover {
+          background-color: colors.$medic-blue-hover;
+          color: white;
+          border: 2px solid colors.$medic-blue;
+        }
+        &--transparent {
+
+        background: none;
+        border: 2px solid colors.$medic-blue;
+        border-radius: 0.375rem;
+        padding: 0.5rem 0.5rem; 
+        cursor:pointer;
+       
+        font-family: Alkatra,sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+
+            background-color: colors.$light-blue;
+            
+        }
+
+        }
+
+    }
+}
+

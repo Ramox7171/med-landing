@@ -7,7 +7,7 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import ActionButton from "./../../shared/ActionButton";
 import * as strings from "../../shared/mock-content.strings.json";
 import "./Navbar.scss";
-import { menuItemsPL } from "../../shared/mock.data";
+import { menuItemsEN } from "../../shared/mock.data";
 
 type Props = {
   isTopOfPage: boolean;
@@ -30,7 +30,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         {/* DESKTOP MENU */}
         {isAboveMediumScreens ? (
           <div className="navbar__menu">
-            {menuItemsPL.map((page) => (
+            {menuItemsEN.map((page) => (
               <Link
                 key={page}
                 page={page}
@@ -40,7 +40,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             ))}
             <div className="navbar__actions">
               <ActionButton setSelectedPage={setSelectedPage}>
-                {strings.heroButtonPL}
+                {strings.heroButtonEN}
               </ActionButton>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           </div>
 
           <div className="mobile-menu__links">
-            {menuItemsPL.map((page) => (
+            {menuItemsEN.map((page) => (
               <Link
                 key={page}
                 page={page}
