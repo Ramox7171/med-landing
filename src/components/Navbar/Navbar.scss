@@ -81,6 +81,7 @@
     svg {
       width: 1.5rem;
       height: 1.5rem;
+      margin: 0 2rem;
       color: colors.$medic-blue;
     }
   }
@@ -95,9 +96,12 @@
   width: 100%;
   background: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  background-color: red;
+  
 
   &__img {
     width: 200px;
+    
   }
   
   &__header {
