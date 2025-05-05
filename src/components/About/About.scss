@@ -7,13 +7,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     &__content{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         text-align: center;
         max-width: 800px;
     }
@@ -22,6 +22,26 @@
         font-size: 2.5rem;
         font-weight: bold;
         margin-bottom: 1rem;
+
+        @media (min-width: 768px) {
+            margin: 8rem 0;
+        }
+
+
+    }
+
+    &__reasons-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 4rem;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            gap: 4rem;
+        }
     }
 
     

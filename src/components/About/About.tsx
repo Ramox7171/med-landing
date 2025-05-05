@@ -1,6 +1,7 @@
 
 import { SelectedPage } from '../../shared/types.helper'
 import {motion} from "framer-motion";
+import * as strings from "../../shared/mock-content.strings.json";
 import "./About.scss";
 
 type Props = {
@@ -22,7 +23,10 @@ const About = ({setSelectedPage}: Props) => {
                     visible: { opacity: 1, x: 0 },
                 }}
             >
-                <h2 className="about__heading"></h2>
+                <h2 className="about__heading">{strings.aboutWelcomeBig}</h2>
+                <div className="about__reasons-box">
+                
+                </div>
 
 
 
