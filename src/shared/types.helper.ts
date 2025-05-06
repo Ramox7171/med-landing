@@ -1,4 +1,4 @@
-
+import { ReactNode } from "react";
 export enum SelectedPage {
     Home = "home",
     AboutUs= "aboutus",
@@ -9,6 +9,14 @@ export enum SelectedPage {
     Contact = "contact",
 
     
+  }
+
+
+  export type TReason ={
+    title: string;
+    description: string;
+    icon: ReactNode;
+    id:number;
   }
 
  
