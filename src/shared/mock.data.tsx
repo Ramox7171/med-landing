@@ -73,4 +73,20 @@ export const menuItemsPL:string[] = ["Strona Główna", "O gabinecie", "Świadcz
             icon: <MapPinIcon /> 
           }
       ];
+
+      export const medicalServices: string[] = [
+        "General check-up tests (morphology, ESR, urine)",
+        "Kidney function tests (urea, creatinine, uric acid)",
+        "Pancreas tests (diastase, glucose)",
+        "Liver tests (bilirubin, transaminases, lipid profile)",
+        "Tumor markers (Ca 19-9, PSA, Ca 125, Ca 15-3)",
+        "ECG test (electrocardiography)",
+        "Analytical control tests",
+        "Blood pressure measurement",
+        "Spirometry with printout",
+        "Intramuscular injections",
+        "Preventive vaccinations for children and adults",
+        "Seasonal flu vaccinations",
+        "Anti-allergy desensitization therapy"
+      ];
     

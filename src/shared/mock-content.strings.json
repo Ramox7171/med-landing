@@ -7,5 +7,6 @@
     "homeInfoRed":"Appointments at the clinic are available only by phone or SMS arrangement for a scheduled time.",
     "homeInfoBlue": "Before making an appointment, please make sure to read the information in the 'Before Visit' section.",
     "aboutWelcomeBig":"Why choose us?",
-    "medicalWelcomeBig":"Check our services"
+    "medicalWelcomeBig":"Check our services",
+    "medicalListTitle": "Services List"
 }
