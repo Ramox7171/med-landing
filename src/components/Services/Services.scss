@@ -1,0 +1,40 @@
+@use "./../../shared/colors" as colors;
+
+
+.services {
+    padding: 2rem 1rem; 
+    background-color: colors.$normal-white;
+    color: colors.$light-dark;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box; 
+  
+    @media (min-width: 768px) {
+      padding: 4rem 2rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 1200px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+    &__heading {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    
+        @media (min-width: 768px) {
+          margin: 8rem 0 4rem 0;
+        }
+      }
+}

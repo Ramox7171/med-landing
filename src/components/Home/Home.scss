@@ -146,7 +146,7 @@
         border-radius: 0.375rem; 
         padding: 0.5rem 2rem; 
         background-color: colors.$medic-blue;
-        color: white;
+        color: colors.$normal-white;
         font-family: Alkatra,sans-serif;
         font-size: 1rem;
         text-align: center;
@@ -156,7 +156,7 @@
       
         &:hover {
           background-color: colors.$medic-blue-hover;
-          color: white;
+          color: colors.$normal-white;
           border: 2px solid colors.$medic-blue;
         }
         &--transparent {
