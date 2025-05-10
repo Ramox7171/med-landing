@@ -1,0 +1,82 @@
+@use "./../../shared/colors" as colors;
+
+
+.pricing {
+  padding: 1rem 0.5rem;
+  background-color: colors.$normal-white;
+  color: colors.$light-dark;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    padding: 4rem 2rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+
+
+
+
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: 768px) {
+      margin: 8rem 0 4rem 0;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__left-box {
+
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+  }
+  
+  &__image{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1.25rem;
+  }
+
+  &__right-box {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  
+}

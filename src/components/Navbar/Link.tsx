@@ -10,7 +10,11 @@ type Props = {
 };
 
 const Link = ({ page, selectedPage, setSelectedPage, setMenuIsToggled }: Props) => {
-  const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage;
+  const lowerCasePage = page.toLowerCase().replace(/ /g, "-") as SelectedPage;
+
+
+
+
 
   return (
     <AnchorLink

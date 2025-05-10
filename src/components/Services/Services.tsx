@@ -12,7 +12,7 @@ type Props = {
 
 const Services = ({setSelectedPage}: Props) => {
   return (
-    <section id='medicalservices' className='services'>
+    <section id='medical-services' className='services'>
         <motion.div
         className="services__content"
         onViewportEnter={() => setSelectedPage(SelectedPage.Medical)}

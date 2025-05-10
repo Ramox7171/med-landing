@@ -8,5 +8,9 @@
     "homeInfoBlue": "Before making an appointment, please make sure to read the information in the 'Before Visit' section.",
     "aboutWelcomeBig":"Why choose us?",
     "medicalWelcomeBig":"Check our services",
-    "medicalListTitle": "Services List"
+    "medicalListTitle": "Services List",
+    "pricingWelcomeBig": "Pricing",
+    "beforeVisitWelcomeBig": "How to prepare for a visit?",
+    "gettingHereWelcomeBig":"Find us here",
+    "contactWelcomeBig": "Contact us"
 }

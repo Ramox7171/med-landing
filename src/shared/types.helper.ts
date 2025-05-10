@@ -1,15 +1,14 @@
 import { ReactNode } from "react";
 export enum SelectedPage {
-    Home = "home",
-    AboutUs= "aboutus",
-    Medical = "medicalservices",
-    Before = "beforevisit",
-    Pricing = "pricing",
-    Getting = "gettinghere",
-    Contact = "contact",
+  Home = "home",
+  AboutUs = "about-us",
+  Medical = "medical-services",
+  Before = "before-visit",
+  Pricing = "pricing",
+  Getting = "getting-here",
+  Contact = "contact",
+}
 
-    
-  }
 
 
   export type TReason ={

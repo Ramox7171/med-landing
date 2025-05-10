@@ -11,7 +11,7 @@ type Props = {
 
 const About = ({ setSelectedPage }: Props) => {
   return (
-    <section id="aboutus" className="about">
+    <section id="about-us" className="about">
       <motion.div
         className="about__content"
         onViewportEnter={() => setSelectedPage(SelectedPage.AboutUs)}
