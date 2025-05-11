@@ -1,17 +1,18 @@
-
 import { SelectedPage } from '../../shared/types.helper';
 import "./BeforeVisit.scss";
 import { motion } from "framer-motion";
 import * as strings from "../../shared/mock-content.strings.json";
+import { beforeVisitInfo } from '../../shared/mock.data';
+
 
 type Props = {
-    setSelectedPage: (value: SelectedPage) => void;
-}
+  setSelectedPage: (value: SelectedPage) => void;
+};
 
-const BeforeVisit = ({setSelectedPage}: Props) => {
+const BeforeVisit = ({ setSelectedPage }: Props) => {
   return (
-    <section id='before-visit' className='before-visit'>
-        <motion.div
+    <section id="before-visit" className="before-visit">
+      <motion.div
         className="before-visit__content"
         onViewportEnter={() => setSelectedPage(SelectedPage.Before)}
         initial="hidden"
@@ -23,17 +24,22 @@ const BeforeVisit = ({setSelectedPage}: Props) => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <h2 className='before-visit__heading'>{strings.beforeVisitWelcomeBig}</h2>
-        <div className='before-visit__box'>
-            <div className='before-visit__left-box'></div>
-            <div className='before-visit__right-box'></div>
+        <h2 className="before-visit__heading">{strings.beforeVisitWelcomeBig}</h2>
+        <div className="before-visit__box">
+          {beforeVisitInfo.map((item, index) => {
+         
+            return (
+              <div key={index} className="before-visit__card">
+                {item.icon}
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            );
+          })}
         </div>
-        
-
       </motion.div>
-
     </section>
-  )
-}
+  );
+};
 
-export default BeforeVisit
+export default BeforeVisit;

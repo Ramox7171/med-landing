@@ -1,4 +1,4 @@
-import { TReason } from "./types.helper";
+import { TpricingItem, TReason,TBeforeVisitItem } from "./types.helper";
 import {
     HeartIcon,
     UserGroupIcon,
@@ -7,6 +7,11 @@ import {
     ShieldCheckIcon,
     MapPinIcon
   } from "@heroicons/react/24/solid";
+  import {
+    IdentificationIcon,
+    CreditCardIcon,
+    PhoneIcon
+  } from "@heroicons/react/24/outline";
 
 
 
@@ -90,3 +95,53 @@ export const menuItemsPL:string[] = ["Strona Główna", "O gabinecie", "Świadcz
         "Anti-allergy desensitization therapy"
       ];
     
+
+      export const pricingList: TpricingItem[] = [{
+        title: "Standard Appointment (Mon-Fri):",
+        price: 200,
+        currency: "PLN" 
+      },
+      {
+        title: "Holiday Appointment:",
+        price: 250,
+        currency: "PLN"
+      },
+      {
+        title: "Follow-up Visit",
+        price: "100-150",
+        currency: "PLN"
+      },
+      {
+        title: "Online Consultation:",
+        price: "100-150",
+        currency: "PLN"
+      }
+    ]
+
+
+    export const beforeVisitInfo: TBeforeVisitItem[] = [
+      {
+        title: "Bring Insurance ID",
+        description:
+          "Although we are a private clinic, we have NFZ contracts for discounted prescriptions. Eligibility can be verified using your PESEL number.",
+        icon: <IdentificationIcon className="before-visit__icon" />,
+      },
+      {
+        title: "Payment Methods",
+        description:
+          "Payments for appointments, lab tests, and other services can be made by cash or credit/debit card.",
+        icon: <CreditCardIcon className="before-visit__icon" />,
+      },
+      {
+        title: "Emergency Numbers",
+        description: (
+          <ul className="before-visit__emergency-list">
+            <li>Emergency (Mobile): <strong>112</strong></li>
+            <li>Ambulance: <strong>999</strong></li>
+            <li>Fire Department: <strong>998</strong></li>
+            <li>Police: <strong>997</strong></li>
+          </ul>
+        ),
+        icon: <PhoneIcon className="before-visit__icon" />,
+      },
+    ];

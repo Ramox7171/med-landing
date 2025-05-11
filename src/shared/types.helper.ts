@@ -18,4 +18,18 @@ export enum SelectedPage {
     id:number;
   }
 
+
+  export type TpricingItem = {
+    title: string;
+    price: string | number;
+    currency: string;
+  }
+
+
+  export type TBeforeVisitItem = {
+    title: string;
+    description: string | ReactNode;
+    icon: ReactNode;
+  };
+
  
