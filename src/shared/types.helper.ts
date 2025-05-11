@@ -32,4 +32,15 @@ export enum SelectedPage {
     icon: ReactNode;
   };
 
+
+  export type TAdress = {
+
+    street: string;
+    streetNumber:number;
+    city: string;
+    district: string;
+    country: string;
+    postalCode: string;
+  }
+
  

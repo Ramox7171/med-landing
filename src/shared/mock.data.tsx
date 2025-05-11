@@ -1,4 +1,4 @@
-import { TpricingItem, TReason,TBeforeVisitItem } from "./types.helper";
+import { TpricingItem, TReason,TBeforeVisitItem, TAdress } from "./types.helper";
 import {
     HeartIcon,
     UserGroupIcon,
@@ -145,3 +145,13 @@ export const menuItemsPL:string[] = ["Strona Główna", "O gabinecie", "Świadcz
         icon: <PhoneIcon className="before-visit__icon" />,
       },
     ];
+
+
+    export const companyAdress: TAdress = {
+      street: "Main St.",
+      streetNumber: 123,
+      city: "Sopot",
+      district: "Centrum",
+      country:"Poland",
+      postalCode: "81-001"
+    }
