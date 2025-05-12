@@ -9,8 +9,6 @@
   color: colors.$classic-black;
   border-bottom: 2px solid colors.$medic-blue;
   transition: background-color 0.3s ease-in-out;
- 
-
 
   &--top {
     background-color: white;
@@ -28,13 +26,9 @@
     align-items: center;
     margin: 0 auto;
     width: 85%;
-    
-
-    
   }
 
   &__logo {
-    
     display: flex;
     align-items: center;
   }
@@ -46,9 +40,8 @@
   &__menu {
     display: flex;
     gap: 2rem;
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
     align-items: center;
-    
 
     &-item {
       text-decoration: none;
@@ -96,14 +89,11 @@
   width: 100%;
   background: colors.$normal-white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  
-  
 
   &__img {
     width: 200px;
-    
   }
-  
+
   &__header {
     display: flex;
     justify-content: center;

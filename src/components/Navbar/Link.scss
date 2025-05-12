@@ -1,16 +1,14 @@
 @use "./../../shared/colors" as colors;
 
-
-
 .anchor-link {
   transition: color 0.5s ease-in-out;
   color: colors.$classic-black;
-  font-family:Alkatra, sans-serif ;
+  font-family: Alkatra, sans-serif;
   font-size: 1.25rem;
   text-decoration: none;
 
   &:hover {
-    color: colors.$medic-blue; 
+    color: colors.$medic-blue;
   }
 }
 

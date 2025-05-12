@@ -1,6 +1,5 @@
 @use "./../../shared/colors" as colors;
 
-
 .services {
   padding: 1rem 0.5rem;
   background-color: colors.$normal-white;
@@ -26,16 +25,12 @@
     max-width: 1200px;
     width: 100%;
     box-sizing: border-box;
-
-
-
-
   }
 
   &__heading {
     font-size: 2.5rem;
     font-weight: bold;
-    margin-top: 4rem;
+    margin-top: 8rem;
     margin-bottom: 2rem;
 
     @media (min-width: 768px) {
@@ -57,15 +52,14 @@
   }
 
   &__left-box {
-
     width: 100%;
 
     @media (min-width: 768px) {
       width: 50%;
     }
   }
-  
-  &__image{
+
+  &__image {
     width: 100%;
     height: auto;
     display: block;
@@ -79,7 +73,7 @@
   }
 
   &__list-box {
-    background:colors.$light-blue;
+    background: colors.$light-blue;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
@@ -105,7 +99,5 @@
     font-size: 1rem;
     font-weight: bold;
     color: colors.$light-dark;
-
-
   }
 }

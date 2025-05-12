@@ -39,9 +39,15 @@ const GettingHere = ({ setSelectedPage }: Props) => {
           <div className="getting-here__right-box">
             <h3>Random Address in Sopot Centrum</h3>
             <div className="address">
-              <p className="address__line">🏠 {companyAdress.streetNumber} {companyAdress.street}</p>
-              <p className="address__line">📍 {companyAdress.city} {companyAdress.district}</p>
-              <p className="address__line">{companyAdress.postalCode} {companyAdress.city}</p>
+              <p className="address__line">
+                🏠 {companyAdress.streetNumber} {companyAdress.street}
+              </p>
+              <p className="address__line">
+                📍 {companyAdress.city} {companyAdress.district}
+              </p>
+              <p className="address__line">
+                {companyAdress.postalCode} {companyAdress.city}
+              </p>
               <p className="address__line">{companyAdress.country}</p>
             </div>
           </div>

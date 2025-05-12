@@ -1,7 +1,7 @@
 @use "./../../shared/colors" as colors;
 
 .before-visit {
-  padding: 1rem 0.5rem;
+  padding: 1.5rem 1rem;
   background-color: colors.$normal-white;
   color: colors.$light-dark;
   width: 100%;
@@ -9,75 +9,90 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   box-sizing: border-box;
-
-  @media (min-width: 768px) {
-    padding: 4rem 2rem;
-  }
+  scroll-margin-top: 6rem;
 
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 1200px;
     width: 100%;
+    max-width: 1200px;
     box-sizing: border-box;
   }
 
   &__heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    margin-top: 0rem;
+    margin-top: 8rem;
     margin-bottom: 2rem;
 
     @media (min-width: 768px) {
-      margin: 6rem 0 4rem 0;
+      font-size: 2.5rem;
+      margin: 6rem 0 4rem;
     }
   }
 
   &__box {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 
     @media (min-width: 768px) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
   &__card {
     background-color: #f4faff;
     border-radius: 12px;
-    padding: 2rem;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    flex: 1 1 300px;
+    padding: 1.25rem 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
 
-    h3 {
-      font-size: 1.2rem;
-      margin: 1rem 0 0.5rem;
+    @media (max-width: 767px) {
+      max-width: 100%;
     }
 
-    p {
-      font-size: 1rem;
+    h3 {
+      font-size: 1.1rem;
+      margin: 0.75rem 0 0.5rem;
+    }
+
+    .before-visit__description {
+      font-size: 0.95rem;
+      line-height: 1.4;
       color: colors.$light-dark;
+      margin-top: auto;
+      min-height: 4.5rem;
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
     }
 
     li {
       list-style: none;
+      text-align: left;
     }
   }
 
   &__icon {
-    width: 3rem;
-    height: 3rem;
+    display: block;
+    margin: 0 auto 0.75rem auto;
+    width: 2.5rem;
+    height: 2.5rem;
     color: #0077b6;
-    margin-bottom: 0.5rem;
+
+    @media (max-width: 480px) {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 }

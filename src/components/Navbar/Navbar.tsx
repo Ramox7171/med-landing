@@ -31,22 +31,15 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         {isAboveMediumScreens ? (
           <div className="navbar__menu">
             {menuItemsEN.map((page) => (
-              <Link
-                key={page}
-                page={page}
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
+              <Link key={page} page={page} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             ))}
             <div className="navbar__actions">
-              <ActionButton setSelectedPage={setSelectedPage}>
-                {strings.heroButtonEN}
-              </ActionButton>
+              <ActionButton setSelectedPage={setSelectedPage}>{strings.heroButtonEN}</ActionButton>
             </div>
           </div>
         ) : (
           <button className="navbar__menu-btn" onClick={() => setIsMenuToggled(!isMenuToggled)}>
-            <Bars3Icon color="#0000"/>
+            <Bars3Icon color="#0000" />
           </button>
         )}
       </div>

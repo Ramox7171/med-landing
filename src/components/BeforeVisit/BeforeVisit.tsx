@@ -1,9 +1,8 @@
-import { SelectedPage } from '../../shared/types.helper';
+import { SelectedPage } from "../../shared/types.helper";
 import "./BeforeVisit.scss";
 import { motion } from "framer-motion";
 import * as strings from "../../shared/mock-content.strings.json";
-import { beforeVisitInfo } from '../../shared/mock.data';
-
+import { beforeVisitInfo } from "../../shared/mock.data";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -27,12 +26,11 @@ const BeforeVisit = ({ setSelectedPage }: Props) => {
         <h2 className="before-visit__heading">{strings.beforeVisitWelcomeBig}</h2>
         <div className="before-visit__box">
           {beforeVisitInfo.map((item, index) => {
-         
             return (
               <div key={index} className="before-visit__card">
                 {item.icon}
                 <h3>{item.title}</h3>
-                <p>{item.description}</p>
+                <div className="before-visit__description">{item.description}</div>
               </div>
             );
           })}
